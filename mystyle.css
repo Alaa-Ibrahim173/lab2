@@ -1,0 +1,60 @@
+.parent{
+    background-color: black;
+    color: white;
+    width:200; height:80;
+    float:left;
+    
+}
+
+/**/
+.A{
+    border-style: solid ;
+    padding: 2px;
+    width: 33%;
+    
+
+}
+.C{
+    display: block;
+    float:left;
+}
+#b{
+    border-style: dashed;
+    width:auto;
+    border-color:green;
+}
+#D::before{
+    content: "*";
+    color: red;
+}
+
+header{
+    border:1px solid black;width:100%;height:80px;background-color: black;display:flex;
+}
+header,a{
+    color:white;padding:0 15px 0 15px;text-align: justify;
+    text-decoration: none ;font-size: 15px;align-items:center;
+}
+#j{
+    display: -webkit-box;
+   margin-left: auto;
+
+    float:right;border: 1px solid black;
+}
+.L{
+    border:0.5px solid hidden;margin-bottom:0.5px;
+}
+.F{
+    width: 100%;
+}
+form{
+    background-color: rgb(222, 228, 228);
+   border: 1px solid black;
+    width:fit-content;height:max-content;
+  margin: auto;
+}
+#D{
+    border: 1px solid rgb(213, 226, 224);
+    padding-left:30px ;text-align: right;
+    background-color:rgb(207, 221, 207);
+}

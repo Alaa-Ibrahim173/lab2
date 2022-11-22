@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet"href="mystyle.css">
+</head>
+<body>
+    <header >
+    
+        <a href="image.html"onmouseover="style.backgroundColor ='red'" onmouseout="style.backgroundColor='black'">Home</a>
+        <a href="alaa_lab1.html" onmouseover="style.backgroundColor ='red'"onmouseout="style.backgroundColor='black'">Road Map</a>
+        <a href="alaa_lab2.html" onmouseover="style.backgroundColor ='red'"onmouseout="style.backgroundColor='black'" >Registeration Form </a>
+        <a href="https://www.iti.gov.eg" onmouseover="style.backgroundColor ='red'"onmouseout="style.backgroundColor='black'">Contact</a>
+        <div id="j">  
+            <img src="ITI_logo.png" alt="ITI_LOGO" width="200px" height="78px">
+        </div>
+    </header> 
+    
+    <form action="process.php" method="GET">
+    <h3 style="color:rgb(114, 163, 147);padding-left: 10px;">   Register-Create Account   </h3>
+
+    <div class="B">
+    <label style="padding-left: 10px;border: 1px dashed black;padding-right:200px;background-color:rgb(207, 221, 207); margin:10px 1px 1px 1px;">Field marked with <span style="color: red;">*</span> are compulsory fields             </label>
+    </div><br/>
+    <!---
+    <div class="D">
+    <label for="yourname">Your Name</label>
+    <input type="text" id="yourname" name="yourname" required>
+    </div><br/>
+    
+    <div class="D">
+    <label for="email_id">E-mail ID</label>
+    <input type="email" id="email_id" name="email_id" required>
+    </div><br/>
+    
+    <div class="E">
+    <label for="alternate_email_id">Alternate E-mail ID</label>
+    <input type="email" id="alternate_email_id" name="alternate_email_id">
+    </div><br/>
+
+    <div class="E" >
+    <table >
+        <th>Your Phone</th>
+    <td>
+        <table >
+            <tr>
+        <th>Country code</th>
+        <th>-</th>
+        <th>City code</th>
+        <th>-</th>
+        <th>Phone Number</th>
+        </tr>
+        <tr>
+            <td><input type="tel" id="country_code" name="country_code"pattern="[0-9]{3}" maxlength="3"></td>
+            <td>-</td>
+            <td><input type="tel" id="city_code" name="city_code"pattern="[0-9]{3}" maxlength="3"></td>
+            <td>-</td>
+            <td"><input type="tel" id="phone_no" name="phone_no"pattern="[0-9]{4}" maxlength="4"></td>
+        </tr>
+     </td>
+    </table>
+    </table>
+    </div><br/>
+
+    <div >
+    <label for="mobilephone">Mobile Phone</label>
+    <input type="tel" id="mobilephone" name="mobilephone">   
+    </div><br/>
+
+    <div class="D">
+    <label for="your_postal_address">Your Postal address</label>
+    <textarea rows="4" cols="50" name="your_postal_address" required>
+    </textarea>
+    </div><br/>
+    <div class="D">
+    <label for="country">Country</label>
+    <select id="country" name="country">
+        <option value="select" disabled selected>------------Select one---------------</option>
+        <option value="Egypt">Egypt</option>
+        <option value="qater">Qater</option>
+        <option value="usa">USA</option>
+      </select>
+    </div><br/>
+    
+    <div class="D">
+        <label for="password">password</label>
+        <input type="password" name="password" required>
+    </div><br/>
+    <div class="D">
+        <label for="re-enter_password">Re-enter Password</label>
+        <input type="password" name="re-enter_password" required>
+    </div><br/>
+-->
+    
+<table style="border:0.5px hidden ">
+    <tr>
+    <th id="D"><label for="yourname">Your Name</label></th>
+    <td><input type="text" id="yourname" name="yourname"style="width: 230px;"required></th>
+    </tr>
+    
+    <tr>
+    <th id="D"><label for="email_id">E-mail ID</label></th>
+    <td><input type="email" id="email_id" name="email_id"style="width: 300px;"required></td>
+    </tr>
+
+    <tr>
+    <th style="border: 1px solid rgb(213, 226, 224);
+    background-color:rgb(207, 221, 207);padding-left:30px ;text-align: right;"><label for="alternate_email_id">Alternate E-mail ID</label></th>
+    <td ><input type="email" id="alternate_email_id" name="alternate_email_id"style="width: 300px;"></td>
+    </tr>
+
+    <tr>
+    <th style="display: block;width: 150px;height:30px;text-align:end;border: 1px solid rgb(213, 226, 224);
+    background-color:rgb(207, 221, 207);padding-left:30px;padding-top :15px;text-align:right;"><label for="your_phone_no">Your Phone</label></th>
+    <td style="font-size: 10px;text-align: left;">
+        <table >
+        <tr>
+    <th>Country code</th>
+    <th>-</th>
+    <th>City code</th>
+    <th>-</th>
+    <th>Phone Number</th>
+    </tr>
+    
+    <tr>
+        <td><input type="tel" id="country_code" name="country_code"maxlength="3" style="width: 80px;"></td>
+        <td>-</td>
+        <td><input type="tel" id="city_code" name="city_code"maxlength="3"style="width:50px;"></td>
+        <td>-</td>
+        <td><input type="tel" id="phone_no" name="phone_no"maxlength="4"style="width:150px;"></td>
+     </tr>
+     </table>
+    </td>
+    </tr>
+
+    <tr>
+        <th style="border:1px solid rgb(213, 226, 224);
+        background-color:rgb(207, 221, 207);padding-left:30px ;text-align: right;"><label for="mobilephone">Mobile Phone</label></th>
+        <td><input type="tel" id="mobilephone" name="mobilephone" style="width: 270px;"></td>
+    </tr>
+    <tr>
+        <th id="D"><label for="your_postal_address">Your Postal address</label></th>
+        <td><textarea rows="4" cols="50" name="your_postal_address"style="width:300px;height:60px;"required></textarea></td>
+    </tr>
+    <tr>
+        <th id="D"><label for="country">Country</label></th>
+        <td><select id="country" name="country" style="width:305px;">
+            <option value="select" disabled selected>------------------------Select one-------------------------</option>
+            <option value="Egypt">Egypt</option>
+            <option value="qater">Qater</option>
+            <option value="usa">USA</option>
+          </select></td>
+    
+    </tr>
+    <tr>
+        <th id="D"><label for="password">password</label></th>
+        <td> <input type="password" name="password" required></td>
+    </tr>
+    <tr>
+        <th id="D"><label for="re-enter_password">Re-enter Password</label></th>
+        <td><input type="password" name="re-enter_password" required></td>
+    </tr>
+</table><br/>
+
+<div style="text-align: center;">
+    <input type="checkbox" name="checkAgree">I accept the<b><a href="#termsofuse" style="color:blue ;text-decoration:underline;">Terms of Use</a></b>
+    </div><br/>
+
+    <div style="text-align:center;padding:0 0 10px 0;">
+    <input type="submit" value="Continue >>">
+    <input type="reset" value="Reset">
+    </div><br/>
+    
+
+
+    </form>
+
+    <hr>
+<footer> <p style="text-align: center;color: rgb(39, 39, 64);"><b>Copyright 2021 by Noha Salah &reg;.All Rights Reserved</b></p></footer>
+</body>
+</html>
